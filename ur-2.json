@@ -1,5 +1,5 @@
 {
-  "engineId": "ur",
+  "engineId": "ur-2",
   "engineFactory": "com.actionml.engines.ur.UREngine",
   "sparkConf": {
     "master": "http://ec2-3-83-121-51.compute-1.amazonaws.com:7077",
