@@ -11,8 +11,8 @@
     "spark.kryoserializer.buffer": "300m",
     "es.index.auto.create": "true",
     "spark.es.index.auto.create": "true",
-    "es.nodes": "https://vpc-elastic-search-domain-dev-eqeatv2dgc5nc6ay3jwwb2ncgi.us-east-1.es.amazonaws.com",
-    "spark.es.nodes": "https://vpc-elastic-search-domain-dev-eqeatv2dgc5nc6ay3jwwb2ncgi.us-east-1.es.amazonaws.com",
+    "es.nodes": "vpc-elastic-search-domain-dev-eqeatv2dgc5nc6ay3jwwb2ncgi.us-east-1.es.amazonaws.com",
+    "spark.es.nodes": "vpc-elastic-search-domain-dev-eqeatv2dgc5nc6ay3jwwb2ncgi.us-east-1.es.amazonaws.com",
     "es.nodes.wan.only": "true",
     "spark.es.nodes.wan.only": "true"
   },
