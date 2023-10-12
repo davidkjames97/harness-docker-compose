@@ -37,6 +37,7 @@ services:
     volumes:
     - ${HARNESS_DATA}:/data
     - ./ur.json:/ur.json
+    - ./ur-2.json:/ur-2.json
 
   watchtower:
     restart: always
