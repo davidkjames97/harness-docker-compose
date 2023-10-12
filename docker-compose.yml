@@ -10,10 +10,9 @@ services:
     environment:
       MONGO_URI: mongodb://mongo:27017
       HARNESS_URI: http://0.0.0.0:9090
-      ELASTICSEARCH_URI: http://elasticsearch:9200
+      ELASTICSEARCH_URI: https://vpc-elastic-search-domain-dev-eqeatv2dgc5nc6ay3jwwb2ncgi.us-east-1.es.amazonaws.com
     depends_on:
       - mongo
-      - elasticsearch
     volumes:
       - ${HARNESS_LOGS}:/harness/logs
       - ${HARNESS_DATA}:/data
@@ -28,19 +27,6 @@ services:
     volumes:
       - ${MONGO_LOGS}:/logs
       - ${MONGO_DATA}:/data/db
-
-  elasticsearch:
-    restart: always
-    image: elasticsearch:7.6.0
-    container_name: elasticsearch
-    environment:
-      ES_JAVA_OPTS: ${ES_JAVA_OPTS}
-      discovery.seed_hosts: elasticsearch
-      discovery.type: single-node
-    ports:
-      - "9200:9200"
-    volumes:
-      - ${ES_DATA}:/usr/share/elasticsearch/data
 
   harness-cli:
     restart: always
