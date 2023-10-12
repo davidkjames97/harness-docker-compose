@@ -11,7 +11,10 @@
     "spark.kryoserializer.buffer": "300m",
     "es.index.auto.create": "true",
     "spark.es.index.auto.create": "true",
+    "es.nodes": "https://vpc-elastic-search-domain-dev-eqeatv2dgc5nc6ay3jwwb2ncgi.us-east-1.es.amazonaws.com:9200",
+    "es.port": "9200",
     "spark.es.nodes": "https://vpc-elastic-search-domain-dev-eqeatv2dgc5nc6ay3jwwb2ncgi.us-east-1.es.amazonaws.com:9200",
+    "spark.es.port": "9200",
     "es.nodes.wan.only": "true",
     "spark.es.nodes.wan.only": "true"
   },
